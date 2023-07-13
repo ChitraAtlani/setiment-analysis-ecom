@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Sentiment Analysis</title>
+    <style>
+        /* Center the form */
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 50px;
+        }
+        /* Style the form inputs and button */
+        
+        input[type="text"] {
+            padding: 10px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+            border: 1px solid #333;
+        }
+        
+        input[type="submit"] {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            background-color: #4caf50;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+        /* Style the sentiment analysis results */
+        
+        .result {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .result h2 {
+            margin-bottom: 10px;
+        }
+        
+        .chart {
+            margin-top: 20px;
+            width: 80%;
+            height: 400px;
+            max-width: 800px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="product-name">Product Name:</label>
+        <input type="text" id="product-name" name="product-name" />
+
+        <input type="submit" value="Generate" />
+    </form>
+
+    <div class="result">
+        <h2>Sentiment Analysis Results:</h2>
+        <canvas class="chart"></canvas>
+    </div>
+
+    <!-- Import Chart.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+    <!-- <!-- Add your JavaScript code here -->
+</body>
+
+</html>
